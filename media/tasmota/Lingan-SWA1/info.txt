@@ -1,0 +1,8 @@
+RX und TX sind vertauscht.
+also
+tx, rx, gnd, gpio0, vcc vom rand nach innen
+
+löte die pins schräg zum verbindungskabel oder schleife vom steg der pins was ab vorher, sonst passen sie nicht ins gehäuse weil sie am relais dranstößt.
+
+
+hab mit 5v geflasht.
