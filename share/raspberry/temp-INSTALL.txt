@@ -1,0 +1,7 @@
+mkdir /home/pi/scripts/ -p
+
+curl -o /home/pi/scripts/temp.sh https://raw.githubusercontent.com/reloxx13/reloxx13.github.io/master/share/raspberry/temp.sh
+
+sudo chmod +x /home/pi/scripts/temp.sh
+
+echo "alias temp='watch -n"1" /home/pi/scripts/./temp.sh'" >> /home/pi/.bash_aliases
