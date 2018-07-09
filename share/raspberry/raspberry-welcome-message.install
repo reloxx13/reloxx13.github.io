@@ -1,0 +1,9 @@
+mkdir /home/pi/scripts -p
+
+curl -o /home/pi/scripts/raspberry-welcome-message.sh https://raw.githubusercontent.com/reloxx13/reloxx13.github.io/master/share/raspberry/raspberry-welcome-message.sh
+
+chmod +x /home/pi/scripts/raspberry-welcome-message.sh
+
+sudo ln -s /home/pi/scripts/raspberry-welcome-message.sh /etc/update-motd.d/11-raspberry-welcome-message.sh
+
+sudo chmod -x /etc/update-motd.d/10-uname
