@@ -1,4 +1,8 @@
 #!/bin/bash
+# beauty ssh welcom message
+# required:
+# sudo apt-get install update-notifier-common
+
 export TERM=xterm-256color
 
 cpuTemp0=$(cat /sys/class/thermal/thermal_zone0/temp)
@@ -52,6 +56,10 @@ echo "$(tput setaf 2)
  - Disk Space.........: $ROOT remaining
  - Memory used........: $MEMORY1 / $MEMORY2
  - Swap in use........: `free -m | tail -n 1 | awk '{print $3}'` MB
+==========================================================
+Updates:
+`/usr/lib/update-notifier/update-motd-reboot-required`
+`/usr/lib/update-notifier/apt-check --human-readable`
 ==========================================================
 $(tput sgr0)"
 
